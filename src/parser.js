@@ -838,7 +838,7 @@
             }; 
         }
     );
-    g.value = _.process(_.rtoken(/^\d\d?(st|nd|rd|th)?/), 
+    g.value = _.process(_.rtoken(/^\d*(st|nd|rd|th)?/), 
         function (s) { 
             return function () { 
                 this.value = s.replace(/\D/g, ""); 
